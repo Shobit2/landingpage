@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    scroll-behavior: smooth;
+    transition: all 0.3s;
+}
+
+.parent{
+     height: 100vh;
+     /* background-color: yellow; */
+     display: flex ; 
+     justify-content: left;
+     background-image: url(nature.png.avif);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: right;   
+}
+.container{
+    display: block;
+    top: 10px;
+    height: auto;
+    width: 100%;
+    /* background-color:rgb(19, 19, 41); */
+    background-image: linear-gradient(90deg ,rgb(13, 12, 27),rgba(17, 17, 32, 1),rgba(65, 65, 112, 0.295));
+    padding: 30px;
+    text-align: justify;
+    border-right: 2px solid;
+    border-right-color: rgb(43, 184, 231); ;
+
+}
+.container  h1{
+    position: relative;
+    font-size: 40px;
+    margin-top: 20px;
+    color: white;
+}
+.container h2{
+    position: absolute;
+    left: 32%;
+    top: 25.1%;
+    color:  rgb(43, 184, 231);;
+    font-size: 50px;
+}
+.container h5{
+    font-size: larger;
+    margin-top: 20px;
+    color: gray;
+    position: relative;
+}
+.container p{
+    font-size: larger;
+    margin-top: 40px;
+    color: gray;
+}
+.container a,h4{
+    text-decoration: none;
+    color: rgb(43, 184, 231);
+}
+.container .first_inputs{
+    margin-top: 30px;
+    width: 40%;
+    height: 50px;
+    position: relative;
+    margin-bottom: 30px; ;
+    
+    
+   
+}
+.container .first_inputs label{
+    position: absolute;
+    font-size: 20px;
+    left: 10px;
+    transition: 0.3s;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.74);
+    font-family: cursive;
+
+}
+.container .first_inputs input{
+    width:45%;
+    margin-bottom: 30px;
+    height: 60px;
+    outline: none;
+    border-radius: 18px;
+    border: none;
+    font-size: 19px;
+    background-color: gray;
+    padding: 15px;
+    color: white;
+    background-color:rgb(46, 58, 94);
+}
+
+.container .last_inputs{
+    left: 19%;
+    top: -13.6%;
+    width: 40%;
+    height: 50px;
+    position: relative;
+    margin-bottom: 30px; ;
+    margin-top: 30px;
+    
+   
+}
+.container .last_inputs label{
+    position: absolute;
+    font-size: 20px;
+    left: 10px;
+    transition: 0.3s;
+    margin-top: 15px;
+    color:rgba(255, 255, 255, 0.719);
+    font-family: cursive;
+}
+.container .last_inputs input{
+    right: 0;
+    width:47%;
+    margin-bottom: 30px;
+    height: 60px;
+    outline: none;
+    border-radius: 18px;
+    border: none;
+    font-size: 19px;
+    background-color: gray;
+    padding: 15px;
+    color: white;
+    background-color:rgb(46, 58, 94)
+}
+
+.container .personal_inputs{
+    margin-top: -13%;
+    width: 40%;
+    height: 50px;
+    position: relative;
+    top: 20%;
+}
+.container .personal_inputs label{
+    margin-top: 15px;
+    position: absolute;
+    font-size: 20px;
+    left: 10px;
+    transition: 0.3s;
+    color:rgba(255, 255, 255, 0.637);
+    font-family: cursive;
+}
+.container .personal_inputs input{
+    width: 95%;
+    top: 70%;
+    margin-bottom: 30px;
+    height: 60px;
+    outline: none;
+    border-radius: 18px;
+    border: none;
+    font-size: 19px;
+    background-color: gray;
+    padding: 15px;
+    color: white;
+    background-color:rgb(46, 58, 94)
+}
+.container .personal_inputs1{
+    margin-top: 50px;
+    width:38%;
+    height: 50px;
+    top: 20%;
+    position: relative;
+}
+.container .personal_inputs1 label{
+    margin-top: 15px;
+    position: absolute;
+    font-size: 20px;
+    left: 10px;
+    transition: 0.3s;
+    color:rgba(255, 255, 255, 0.664);
+    font-family: cursive;
+}
+.container .personal_inputs1 input{
+    width: 100%;
+    margin-bottom: 30px;
+    height: 60px;
+    outline: none;
+    border-radius: 18px;
+    border: none;
+    font-size: 19px;
+    background-color: gray;
+    padding: 15px;
+    color: white;
+    background-color:rgb(46, 58, 94)
+}
+.container .personal_inputs1 input:focus{
+    outline: 1px solid  rgb(43, 184, 231);;
+}
+.container .personal_inputs input:focus{
+    outline: 1px solid  rgb(43, 184, 231);
+}
+.container .first_inputs input:focus{
+    outline: 1px solid  rgb(43, 184, 231);
+}
+.container .last_inputs input:focus{
+    outline: 1px solid  rgb(43, 184, 231);
+}
+.container .first_inputs input:focus~label,
+.container .first_inputs input:valid~label{
+    transform: translateY(-37px);
+    color: gray;
+    font-size: 15px;
+}
+.container .last_inputs input:focus~label,
+.container .last_inputs input:valid~label{
+    transform: translateY(-37px);
+    color: gray;
+    font-size: 15px;
+}
+.container .personal_inputs input:focus~label,
+.container .personal_inputs input:valid~label{
+    transform: translateY(-37px);
+    color: gray;
+    font-size: 15px;
+}
+.container .personal_inputs1 input:focus~label,
+.container .personal_inputs1 input:valid~label{
+    transform: translateY(-37px);
+    color: gray;
+    font-size: 15px;
+}
+button{
+    position: relative;
+    margin-top: 50px;
+    width: 20%;
+    height: 50px;
+    border-radius: 30px;
+    border-color: white;
+    background-color:  rgb(43, 184, 231);
+    cursor: pointer;
+    top:20%;
+    
+}
+button {
+    color: white;
+    font-size: 16px;
+    z-index: 4;
+}
+button::after{
+    height: 100%;
+    left: -35%;
+    top:0;
+    transform: skew(50deg);
+    transition:0.3s;
+    width: 0;
+    transform-origin: top left;
+}
+button:hover::after{
+    height: 100%;
+    width: 135%;
+}
+li {
+    display: inline-flex;
+    
+}
+.navbar{
+    /* background-color:rgb(57, 27, 112) ; */
+    background-color:rgba(241, 237, 237, 0.096);
+    top:0;
+    left: 0;
+    backdrop-filter: blur(2px);
+    height: 12%;
+    position: sticky;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    width: 100%;
+}
+.navbar a {
+    color: rgb(37, 185, 235);
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: 799;
+    margin-left: 30px;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    /* top: 20px; */
+    text-align: right;
+    /* right: 0; */
+    z-index: 4;
+
+}
+
+.navbar a::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color:rgb(3, 164, 204);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: center;
+    
+}
+.navbar a:hover::after{
+    transform: scaleX(1);
+}
+.content{
+    margin-top: 15%;
+    position: relative;
+    display: block;
+    
+}
+.content h5{
+    margin-top: -10%;
+    text-align: justify;
+    font-size: 50px;
+    font-weight: 800;
+    color:  rgb(30, 130, 163);
+}
+.content1{
+    margin-top: 15%;
+    position: relative;
+    display: block;
+    border: 0 0 0 1px solid ;
+    border-right-color:rgb(43, 184, 231) ;
+    
+}
+.content1 h5{
+    margin-top: -10%;
+    text-align: justify;
+    font-size: 50px;
+    font-weight: 800;
+    color:  rgb(30, 130, 163);
+}
+.content2{
+    margin-top: 15%;
+    position: relative;
+    display: block;
+    
+}
+.content2 h5{
+    margin-top: -10%;
+    text-align: justify;
+    font-size: 50px;
+    font-weight: 800;
+    color:  rgb(30, 130, 163);
+}
+
+
